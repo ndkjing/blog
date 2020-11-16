@@ -1,6 +1,7 @@
 # DjangoBlog
 
-🌍
+部署网站地址：http://www.aitu.run 
+
 *[English](/docs/README-en.md) ∙ [简体中文](README.md)*
 
 基于`python3.8`和`Django3.0`的博客。   
@@ -118,27 +119,7 @@ CREATE DATABASE `djangoblog` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8
 
 有任何问题欢迎提Issue,或者将问题描述发送至我邮箱 `liangliangyy#gmail.com`.我会尽快解答.推荐提交Issue方式.  
 
----
- ## 致大家🙋‍♀️🙋‍♂️
- 如果本项目帮助到了你，请在[这里](https://github.com/liangliangyy/DjangoBlog/issues/214)留下你的网址，让更多的人看到。
-您的回复将会是我继续更新维护下去的动力。 
 
+### 项目主要参考如下博主项目（感谢）
+https://github.com/liangliangyy/DjangoBlog
 
-## 捐赠
-如果您觉得本项目对您有所帮助，欢迎您请我喝杯咖啡，您的支持是我最大的动力，您可以扫描下方二维码为我付款，谢谢。
-### 支付宝：
-<div>    
-<img src="https://resource.lylinux.net/image/2017/12/16/IMG_0207.jpg" width="150" height="150" />
-</div>  
-
-### 微信：
-<div>    
-<img src="https://resource.lylinux.net/image/2017/12/16/IMG_0206.jpg" width="150" height="150" />
-</div>
-
----
-
-感谢jetbrains
-<div>    
-<a href="https://www.jetbrains.com/?from=DjangoBlog"><img src="https://resource.lylinux.net/image/2020/07/01/logo.png" width="150" height="150"></a>
-</div>

@@ -7,6 +7,7 @@
 
         <div class="card card-signin">
             <img class="img-circle profile-img" src="{% static 'blog/img/avatar.png' %}" alt="">
+
             <form class="form-signin" action="{% url 'account:login' %}" method="post">
                 {% csrf_token %}
                 {% comment %}<label for="inputEmail" class="sr-only">Email address</label>

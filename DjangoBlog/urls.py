@@ -25,7 +25,6 @@ from DjangoBlog.admin_site import admin_site
 from django.urls import include, path
 
 sitemaps = {
-
     'blog': ArticleSiteMap,
     'Category': CategorySiteMap,
     'Tag': TagSiteMap,
