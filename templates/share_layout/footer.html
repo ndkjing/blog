@@ -13,7 +13,7 @@
         </a>
         &nbsp;|&nbsp;
         <a href="/links.html" title="友情链接" rel="nofollow" target="_blank">
-            友情链接
+            友情$链接
         </a>
         |&nbsp; Hosting On&nbsp;
         <a href="https://www.linode.com/?r=b0d38794d05ef8816b357a929106e89b7c6452f9" target="blank" rel="nofollow">Linode</a>
@@ -34,18 +34,26 @@
         |
         本页面加载耗时:<!!LOAD_TIMES!!>s
     </div>
-    {% if BEIAN_CODE %}
-        <div class="site-info" style="text-align: center">
-            <a href="http://www.beian.miit.gov.cn/" rel="nofollow" target="_blank">
-                <p style=" height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
-                    {{ BEIAN_CODE }}
-                </p>
-            </a>
-            {% if BEIAN_CODE_GONGAN and SHOW_GONGAN_CODE %}
-                {{ BEIAN_CODE_GONGAN |safe }}
-            {% endif %}
-        </div>
-    {% endif %}
+{#    {% if BEIAN_CODE %}#}
+{#        <div class="site-info" style="text-align: center">#}
+{#            <a href="http://www.beian.miit.gov.cn/" rel="nofollow" target="_blank">#}
+{#                <p style=" height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">#}
+{#                     {{ BEIAN_CODE }}#}
+{#                </p>#}
+{#            </a>#}
+{#            {% if BEIAN_CODE_GONGAN and SHOW_GONGAN_CODE %}#}
+{#                {{ BEIAN_CODE_GONGAN |safe }}#}
+{#            {% endif %}#}
+{#        </div>#}
+{#    {% endif %}#}
+
+{#    # ICP和公安 备案号#}
+    <div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="http://beian.miit.gov.cn/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鄂ICP备2020017327号</p></a>
+{#    </div>#}
+{#    <div style="width:300px;margin:0 auto; padding:20px 0;">#}
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502004734" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/collectedstatic/assets/img/gongan.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鄂公网安备 42018502004734号</p></a>
+    </div>
     {% if ANALYTICS_CODE %}
         {{ ANALYTICS_CODE| safe }}
     {% endif %}

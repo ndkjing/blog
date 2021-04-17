@@ -202,9 +202,9 @@ def get_blog_setting():
         from blog.models import BlogSettings
         if not BlogSettings.objects.count():
             setting = BlogSettings()
-            setting.sitename = 'DjangoBlog'
-            setting.site_description = '基于Django的博客系统'
-            setting.site_seo_description = '基于Django的博客系统'
+            setting.sitename = 'jingBlog'
+            setting.site_description = '既然选择了远方就只顾风雨兼程'
+            setting.site_seo_description = ''
             setting.site_keywords = 'Django,Python'
             setting.article_sub_length = 300
             setting.sidebar_article_count = 10
@@ -212,10 +212,27 @@ def get_blog_setting():
             setting.show_google_adsense = False
             setting.open_site_comment = True
             setting.analyticscode = ''
-            setting.beiancode = ''
+            setting.beiancode = '鄂ICP备2020017327号'
             setting.show_gongan_code = False
             setting.save()
-        value = BlogSettings.objects.first()
+        ## 第一次生产后就定死了 暂时修改为重复辅助
+        else :
+            setting = BlogSettings()
+            setting.sitename = 'jingBlog'
+            setting.site_description = '既然选择了远方就只顾风雨兼程'
+            setting.site_seo_description = ''
+            setting.site_keywords = 'Django,Python'
+            setting.article_sub_length = 300
+            setting.sidebar_article_count = 10
+            setting.sidebar_comment_count = 5
+            setting.show_google_adsense = False
+            setting.open_site_comment = True
+            setting.analyticscode = ''
+            setting.beiancode = '鄂ICP备2020017327号'
+            setting.show_gongan_code = False
+            setting.save()
+        inedx = len(BlogSettings.objects.all())-1
+        value = BlogSettings.objects.all()[inedx]
         logger.info('set cache get_blog_setting')
         cache.set('get_blog_setting', value)
         return value
