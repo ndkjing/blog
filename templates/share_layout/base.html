@@ -45,6 +45,7 @@
 </head>
 
 <body class="home blog custom-font-enabled">
+
 <div id="page" class="hfeed site">
     <header id="masthead" class="site-header" role="banner">
         <hgroup>
@@ -71,7 +72,8 @@
     </div><!-- #main .wrapper -->
     {% include 'share_layout/footer.html' %}
 </div><!-- #page -->
-
+{#添加背景动态#}
+<script src="{% static 'assets/js/ribbon.min.js' %}"></script>
 </body>
 <footer>
     {% compress js %}

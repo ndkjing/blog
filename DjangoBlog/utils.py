@@ -203,7 +203,7 @@ def get_blog_setting():
         if not BlogSettings.objects.count():
             setting = BlogSettings()
             setting.sitename = 'jingBlog'
-            setting.site_description = '既然选择了远方就只顾风雨兼程'
+            setting.site_description = ''
             setting.site_seo_description = ''
             setting.site_keywords = 'Django,Python'
             setting.article_sub_length = 300
@@ -219,7 +219,7 @@ def get_blog_setting():
         else :
             setting = BlogSettings()
             setting.sitename = 'jingBlog'
-            setting.site_description = '既然选择了远方就只顾风雨兼程'
+            setting.site_description = ''
             setting.site_seo_description = ''
             setting.site_keywords = 'Django,Python'
             setting.article_sub_length = 300

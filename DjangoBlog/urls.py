@@ -25,7 +25,6 @@ from DjangoBlog.admin_site import admin_site
 from django.urls import include, path
 
 sitemaps = {
-
     'blog': ArticleSiteMap,
     'Category': CategorySiteMap,
     'Tag': TagSiteMap,
@@ -51,13 +50,10 @@ urlpatterns = [
     url(r'', include('servermanager.urls', namespace='servermanager')),
     url(r'', include('owntracks.urls', namespace='owntracks'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-urlpatterns += static(settings.MEDIA_URL,
-                      document_root=settings.MEDIA_ROOT)
-urlpatterns += static(settings.STATIC_URL,
-                      document_root=settings.STATIC_ROOT)
-#
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL,
-#                           document_root=settings.MEDIA_ROOT)
-#     urlpatterns += static(settings.STATIC_URL,
-#                           document_root=settings.STATIC_ROOT)
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
