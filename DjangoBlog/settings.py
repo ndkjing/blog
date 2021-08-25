@@ -59,7 +59,7 @@ else:
     current_platform = CurrentPlatform.others
 # 在本机上ｄｅｂｕｇ打开在远程上关闭
 if current_platform == CurrentPlatform.windwos:
-    DEBUG = True
+    DEBUG = False
 else:
     DEBUG = False
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
@@ -139,7 +139,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'djangoblog',
             'USER': 'djangoblog',
-            'PASSWORD': 'e1028Ndk_',
+            'PASSWORD': 'e1028Ndk#_',
             'HOST': '127.0.0.1',
             'PORT': 3306,
             'OPTIONS': {
@@ -195,9 +195,9 @@ AUTHENTICATION_BACKENDS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATIC_URL = '/static/'
+STATIC_URL = '/collectedstatic/'
 # STATICFILES = os.path.join(BASE_DIR, 'static')
-STATICFILES = os.path.join(BASE_DIR, 'static')
+STATICFILES = os.path.join(BASE_DIR, 'collectedstatic')
 
 AUTH_USER_MODEL = 'accounts.BlogUser'
 LOGIN_URL = '/login/'
